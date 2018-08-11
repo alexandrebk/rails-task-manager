@@ -1,9 +1,9 @@
-# README
+# Basic Task Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+git clone git@github.com:alexandrebk/rails-task-manager.git
+```
 
-Things you may want to cover:
 
 * Ruby version: 2.4.3
 
