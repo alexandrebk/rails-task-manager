@@ -1,15 +1,9 @@
-<h1> Titre: <%= @task.title %></h1>
-
-
-
-<h2> Détails: <%= @task.details %>   </h2>
-
-<h2> Completed? <%= @task.completed %>   </h2>
-
-<%= fa_icon "undo"%>
-
-<%= link_to "Back to the list", tasks_path %>
-
-<%= fa_icon "edit"%>
-
-<%= link_to "Edit the task", task_edit_path %>
+<div>
+  <h1> Titre: <%= @task.title %></h1>
+  <h2> Détails: <%= @task.details %> </h2>
+  <h2> Completed? <%= @task.completed %> </h2>
+  <%= fa_icon "undo"%>
+  <%= link_to "Back to the list", tasks_path %>
+  <%= fa_icon "edit"%>
+  <%= link_to "Edit the task", task_edit_path %>
+</div>
