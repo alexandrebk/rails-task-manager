@@ -1,24 +1,17 @@
 # Basic Task Manager
 
-```
-git clone git@github.com:alexandrebk/rails-task-manager.git
-```
-
+ToDo List avec un CRUD basique crée avec Ruby on Rails.
 
 * Ruby version: 2.4.3
 
-* System dependencies
-
-* Configuration
+* Rails version: 5.1.4
 
 * Database: sqlite3
 
-* For Database initialization, run
-
-```
-rails db:migrate
-```
-
 * Deployment instructions
 
-* ...
+```
+git clone git@github.com:alexandrebk/rails-task-manager.git
+bundle install
+rails db:migrate
+```

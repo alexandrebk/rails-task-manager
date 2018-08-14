@@ -1,14 +1,17 @@
 <h1>Liste de toutes mes tâches</h1>
 
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <%= fa_icon "edit"%>
+      <%= link_to task.title, task_path(task) %>
+      <%= fa_icon "trash"%>
+      <%= link_to "Delete", task_path(task), method: :delete, data: { confirm: "Are you sure?" }, class: "toto" %>
+    </li>
+  <% end %>
+</ul>
 
-<% @tasks.each do |task| %>
-  <h2><%= link_to task.title, task_path(task) %>   </h2>
-  <p>    <%= link_to "Delete", task_path(task),
-      method: :delete,
-      data: { confirm: "Are you sure?" },
-      class: "toto" %> </p>
-<% end %>
-
-<p>
+<h2>
+  <%= fa_icon "plus-circle"%>
   <%= link_to "New Task", task_new_path %>
-</p>
+</h2>
