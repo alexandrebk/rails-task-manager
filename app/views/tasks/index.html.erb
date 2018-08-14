@@ -3,10 +3,13 @@
 <ul>
   <% @tasks.each do |task| %>
     <li>
+      <%= task.completed ? "[X] - " : "[ ] - " %>
       <%= fa_icon "edit"%>
       <%= link_to task.title, task_path(task) %>
-      <%= fa_icon "trash"%>
-      <%= link_to "Delete", task_path(task), method: :delete, data: { confirm: "Are you sure?" }, class: "toto" %>
+
+      <%= link_to task_path(task), method: :delete do %>
+        <%= fa_icon "trash" %>
+      <% end %>
     </li>
   <% end %>
 </ul>

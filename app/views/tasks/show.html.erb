@@ -6,4 +6,7 @@
   <%= link_to "Back to the list", tasks_path %>
   <%= fa_icon "edit"%>
   <%= link_to "Edit the task", task_edit_path %>
+  <%= link_to task_path(@task), method: :delete do %>
+    <%= fa_icon "trash" %>
+  <% end %>
 </div>
